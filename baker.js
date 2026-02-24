@@ -190,8 +190,8 @@ function renderLeaderboard() {
 }
 
 (function() {
-    const leftAds = ['assets/ad-left.png', 'assets/ad-left2.PNG', 'assets/ad-left3.PNG'];
-    const rightAds = ['assets/ad-right.png', 'assets/ad-right2.PNG', 'assets/ad-right3.PNG'];
+    const leftAds = ['assets/ad-left.png', 'assets/ad-left2.png', 'assets/ad-left3.png'];
+    const rightAds = ['assets/ad-right.png', 'assets/ad-right2.png', 'assets/ad-right3.png'];
 
     function updateAds() {
         const leftAdEl = document.getElementById('ad-left');
@@ -209,4 +209,5 @@ function renderLeaderboard() {
     }
 
     updateAds();
+
 })();
