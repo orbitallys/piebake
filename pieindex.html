@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pie Baking Game</title>
+    <link rel="stylesheet" href="piestyle.css">
+</head>
+<body>
+    <div class="arcade-layout">
+        
+        <aside class="ad-banner">
+            <img id="ad-left" src="assets/ad-left.png" alt="Ad Space" onerror="this.style.display='none'">
+        </aside>
+
+        <div id="game-container">
+        
+        <div id="menu-screen" class="screen active">
+            <h1>Pie Baker</h1>
+            <input type="text" id="player-name" placeholder="Enter your name" maxlength="15">
+            <button id="btn-begin">Begin Baking</button>
+            <button id="btn-leaderboard">Leaderboard</button>
+        </div>
+
+        <div id="leaderboard-screen" class="screen">
+            <h1>Leaderboard</h1>
+            <ul id="leaderboard-list"></ul>
+            <button id="btn-back-menu">Menu</button>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div id="left-table">
+                <img src="assets/marshmallowsnack.png" class="ingredient" data-type="marshmallowsnack">
+                <img src="assets/travis.png" class="ingredient" data-type="travis">
+                <img src="assets/sapple.png" class="ingredient" data-type="sapple">
+                <img src="assets/pleeds.png" class="ingredient" data-type="pleeds">
+                <img src="assets/gummyguy.png" class="ingredient" data-type="gummyguy">
+                <img src="assets/candy.png" class="ingredient" data-type="candy">
+                <img src="assets/smore.png" class="ingredient" data-type="smore">
+            </div>
+            
+            <div id="right-table" class="plaid-table">
+                <div id="counter">0/55</div>
+                <img src="assets/piedish.png" id="pie-dish">
+                <button id="btn-bake" style="display:none;">Bake</button>
+            </div>
+        </div>
+
+        <div id="finished-screen" class="screen">
+            <div class="plaid-table finish-layout">
+                <div class="overlay"></div>
+                <h1 class="finish-title">Pie Finished</h1>
+                <h2 id="accuracy-text" class="finish-title">Accuracy: 100%</h2>
+                
+                <div id="pie-display">
+                    <img src="assets/swirleffect.gif" id="swirl-bg">
+                    <img src="" id="finished-pie">
+                    <img src="" id="topping-ingredient">
+                </div>
+                
+                <button id="btn-menu-from-finish">Menu</button>
+            </div>
+        </div>
+
+        </div> <aside class="ad-banner">
+            <img id="ad-right" src="assets/ad-right.png" alt="Ad Space" onerror="this.style.display='none'">
+        </aside>
+
+    </div> <script src="baker.js"></script>
+</body>
+</html>
